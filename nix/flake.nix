@@ -22,10 +22,11 @@
         };
 
         devshells.default = {
-            packages = with pkgs; [
-              moonbit-bin.moonbit.latest
-            ];
-          };
+          packages = with pkgs; [
+            moonbit-bin.moonbit.latest
+            moonbit-bin.lsp.latest
+          ];
+        };
       };
 
       systems = [
